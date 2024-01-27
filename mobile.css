@@ -1,0 +1,347 @@
+@media screen and (max-width: 776px) {
+  /*navigationBar*/
+
+  .custom-navbar {
+    width: 400px;
+    height: 100%;
+    background-color: rgb(38 38 38 / 0.68);
+    position: fixed;
+    top: 0;
+    right: -400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border-radius: 20% 0 0 60%;*/
+    transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+    z-index: 26;
+  }
+
+  .nav-link:focus,
+  .nav-link:hover {
+    color: #eee !important;
+    text-decoration: none;
+  }
+
+  #overview p {
+    text-align: justify;
+  }
+
+  /* Hamburger Menu */
+  .change {
+    right: 0;
+  }
+
+  .hamburger-menu {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+    padding: 15px;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #f36b1c;
+    transition: all 0.8s;
+  }
+
+  .linehover {
+    width: 70%;
+  }
+
+  .linehover:hover {
+    width: 100%;
+  }
+
+  .change .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+  }
+
+  .change .line-2 {
+    opacity: 0;
+  }
+
+  .change .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px);
+  }
+
+  .nav-list {
+    text-align: center;
+  }
+
+  .nav-item {
+    list-style: none;
+    margin: 25px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    text-align: center;
+    color: #eee;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 3px 0;
+  }
+
+  .nav-link::before,
+  .nav-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #f36b1c;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+
+  .nav-link::after {
+    bottom: 0;
+    transform-origin: right;
+  }
+
+  .nav-link::before {
+    top: 0;
+    transform-origin: left;
+  }
+
+  .nav-link:hover::before,
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+  .firstnav {
+    display: none;
+  }
+  .logo1 {
+    display: block;
+    position: absolute;
+    top: 38px;
+    left: 33px;
+  }
+  .secondnav ul {
+    display: flex;
+    gap: 0;
+    line-height: 4px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .box {
+    background-color: rgb(228 228 233);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 390px;
+    border-radius: 0px;
+  }
+
+  .btn button {
+    position: relative;
+    margin-top: 5px;
+    margin-right: 63px;
+  }
+
+  /* section first  */
+  .boxes {
+    flex-direction: column;
+    margin: 100px 0px 45px;
+  }
+  .box2 img {
+    width: 390px;
+    height: 347px;
+    object-fit: cover;
+  }
+  .headding h1 {
+    color: rgb(53, 53, 67);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 0px;
+    text-align: center;
+  }
+  .line1 {
+    display: none;
+  }
+  .section-sec-boxes {
+    display: flex;
+    gap: 0px;
+    margin: 48px 0px 25px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 24px 16px;
+  }
+
+  .img img {
+    width: 390px;
+    margin: 10px 0px;
+  }
+
+  /* section third  */
+  section.sectionthird {
+    display: flex;
+    height: 665px;
+    width: 85%;
+    margin: 10px 0px 30px;
+    background-size: 100% 34%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0px 24px 0px 28px;
+    border-radius: 4px;
+  }
+  .img1:first-child {
+    display: none;
+  }
+  .img1 img {
+    width: 115px;
+    object-fit: cover;
+  }
+  .img1 {
+    cursor: pointer;
+    margin-left: 17px;
+    display: flex;
+    flex-direction: row-reverse;
+    /* -webkit-box-align: center; */
+    align-items: flex-end;
+  }
+
+  /* section fourth  */
+  section.sectionfourth {
+    display: flex;
+    height: 665px;
+    width: 85%;
+    margin: 10px 0px 30px;
+    background-size: 100% 34%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 0px 24px 0px 28px;
+    border-radius: 4px;
+  }
+
+  /* section fifith  */
+  section.sectionfifth {
+    display: flex;
+    height: 300px;
+    width: 87%;
+    margin: 45px auto;
+    background-size: 100% 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 15px 24px 0px 27px;
+    border-radius: 4px;
+  }
+  .text {
+    width: 244px;
+  }
+  .text span {
+    font-size: 20px;
+  }
+  .text h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .img2 img {
+    margin: 23px 0px;
+    width: 91px;
+  }
+
+  /* section six  */
+  section.sectionsix {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    padding: 45px 11px;
+  }
+  section.sectionsix > span {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 10px;
+  }
+  section.sectionsix p {
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 400;
+    margin-top: 12px;
+    width: 228px;
+  }
+  section.sectionsix button {
+    width: 112px;
+    padding: 6px 7px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 8px;
+    position: relative;
+    cursor: pointer;
+    left: 134px;
+    bottom: 41px;
+  }
+  .sixiteam {
+    display: block;
+  }
+
+  /* products css  */
+  .products h1 {
+    margin-left: 24px;
+  }
+  .products-left-items {
+    /* padding: 34px; */
+    display: flex;
+    flex-direction: column;
+    width: 134%;
+    background-color: #f5f5f585;
+    margin-top: 13px;
+    gap: 20px;
+  }
+  .grid-cards {
+    background: #e1dada6b;
+    /* padding: 0px 10px; */
+    width: 137%;
+    position: relative;
+    left: -62px;
+  }
+
+  .productsleft-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  /* Footer section css  */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+  }
+  .first-footer {
+    width: 100%;
+  }
+  .first-footer img {
+    margin: 21px 0px;
+    width: 43%;
+  }
+  .second-footer ul li {
+    list-style: none;
+  }
+  .third-footer ul li {
+    list-style: none;
+  }
+  .fifith-footer {
+    width: 100%;
+  }
+}
